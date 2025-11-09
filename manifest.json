@@ -1,21 +1,24 @@
 {
   "manifest_version": 3,
   "name": "YT Chords & Key Helper",
-  "version": "0.1.0",
-  "description": "Detect the key/scale and live chords on YouTube so you can play and sing along.",
+  "version": "1.0.0",
+  "description": "Detect key, chords, and provide guitar-friendly tools while listening to YouTube songs.",
   "permissions": ["scripting", "tabs"],
   "host_permissions": ["https://www.youtube.com/*"],
-  "background": {
-    "service_worker": "background.js"
-  },
+
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["content.js"],
+      "js": [
+        "libs/meyda.min.js",
+        "libs/tonal.min.js",
+        "content.js"
+      ],
       "css": ["overlay.css"],
       "run_at": "document_idle"
     }
   ],
+
   "web_accessible_resources": [
     {
       "resources": ["overlay.css"],

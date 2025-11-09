@@ -1,76 +1,76 @@
 #ytc-overlay {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
-  z-index: 999999;
-  font-family: ui-sans-serif, system-ui, Arial, sans-serif;
-  background: rgba(20,20,28,0.9);
-  color: #fff;
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: 14px;
-  padding: 12px 14px;
-  width: 280px;
+  right: 20px;
+  bottom: 20px;
+  width: 260px;
+  background: rgba(20, 20, 30, 0.92);
+  color: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  z-index: 999999999;
+  font-family: Arial, sans-serif;
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
 
 #ytc-overlay h3 {
-  margin: 0 0 6px 0;
-  font-size: 14px;
-  opacity: 0.9;
-  font-weight: 600;
-}
-
-#ytc-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin-top: 6px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 #ytc-badge {
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 32px;
   text-align: center;
-  padding: 6px 8px;
-  background: rgba(255,255,255,0.06);
+  padding: 8px;
+  background: rgba(255,255,255,0.08);
   border-radius: 10px;
+  font-weight: bold;
 }
 
 #ytc-key {
   font-size: 14px;
+  margin-top: 8px;
   padding: 8px;
   text-align: center;
-  background: rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.08);
   border-radius: 10px;
 }
 
 #ytc-buttons {
-  display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
 }
+
 .ytc-btn {
-  cursor: pointer;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
-  padding: 6px 8px;
-  border-radius: 8px;
+  padding: 6px 10px;
   font-size: 12px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  cursor: pointer;
 }
 
 #ytc-diatonic {
-  margin-top: 8px;
-  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .ytc-chip {
-  font-size: 12px;
-  background: rgba(255,255,255,0.08);
-  padding: 4px 6px;
+  padding: 4px 8px;
+  background: rgba(255,255,255,0.1);
   border-radius: 6px;
+  font-size: 12px;
 }
 
 #ytc-status {
-  margin-top: 6px;
-  font-size: 11px;
+  margin-top: 10px;
+  font-size: 12px;
   opacity: 0.7;
 }
