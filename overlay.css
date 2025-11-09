@@ -1,0 +1,76 @@
+#ytc-overlay {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 999999;
+  font-family: ui-sans-serif, system-ui, Arial, sans-serif;
+  background: rgba(20,20,28,0.9);
+  color: #fff;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 12px 14px;
+  width: 280px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+#ytc-overlay h3 {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+#ytc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+#ytc-badge {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  padding: 6px 8px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+}
+
+#ytc-key {
+  font-size: 14px;
+  padding: 8px;
+  text-align: center;
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+}
+
+#ytc-buttons {
+  display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap;
+}
+.ytc-btn {
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+#ytc-diatonic {
+  margin-top: 8px;
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+
+.ytc-chip {
+  font-size: 12px;
+  background: rgba(255,255,255,0.08);
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+#ytc-status {
+  margin-top: 6px;
+  font-size: 11px;
+  opacity: 0.7;
+}
